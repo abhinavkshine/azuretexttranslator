@@ -1,0 +1,28 @@
+--- # Azure Text Traslator
+meta:
+  name         : aztranslate
+  title        : Azure Text Translation cognitive services on the cloud.
+  keywords     : azure, text translation, translation, cloud
+  version      : 2.4.7
+  languages    : py
+  license      : mit
+  author       : Graham.Williams@microsoft.com
+  url          : https://github.com/Azure/aztranslate
+dependencies:
+  pip3: requests, uuid
+  files:
+    - https://mlhub.ai/empty.txt: private.txt
+    - docs/README.md: README.md
+    - demo.py
+    - supported.py
+    - detect.py
+    - translate.py
+    - transliterate.py
+    - limits.py
+commands:
+  demo: Demonstrate the functionality of text translator.
+  supported: List the supported languages.
+  detect : Detect the language of supplied text.
+  translate: Use the model to translate user provided text.
+  transliterate: Generate the phonetics for the provided text.
+  limits: Discuss limitations of deep learning with shallow AI.
